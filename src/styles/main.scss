@@ -1,0 +1,41 @@
+
+@import './normalize';
+@import './global/fonts';
+@import './global/variables';
+@import './global/utils';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  font-family: $fontFamily;
+  @include font-size($baseFontSize);
+  line-height: calculateRem(16px);
+  color: $black;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  @include font-size(32px);
+  line-height: calculateRem(38px);
+  margin-bottom: calculateRem(35px);
+}
+
+h2 {
+  @include font-size(24px);
+  line-height: calculateRem(29px);
+  margin-bottom: calculateRem(26px);
+}
+
+a {
+  color: $bluedark;
+  text-decoration: none;
+}

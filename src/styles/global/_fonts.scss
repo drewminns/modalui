@@ -1,0 +1,15 @@
+$font_path: 'https://cdn.dribbble.com';
+
+@font-face {
+  font-family: "Haas Grot";
+  src: url($font_path+"/assets/neue-haas-grotesk/NeueHaasGrotTextRound-55Roman-Web-918d6c0071910d16c58bb45eeb08e87598b004241f36359a15adc8eec053d0dc.eot?#iefix") format("embedded-opentype"), url($font_path+"/assets/neue-haas-grotesk/NeueHaasGrotTextRound-55Roman-Web-401f96309459eb9bd83fcda072bff4dfa929fd4ef142c0df652a5bede195e5a7.woff2") format("woff2"), url($font_path+"/assets/neue-haas-grotesk/NeueHaasGrotTextRound-55Roman-Web-37cd8a0236ba65d8961c5e2b4d10a61e9e6e9843efa02240b1f562c9c808207b.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Haas Grot";
+  src: url($font_path+"/assets/neue-haas-grotesk/NeueHaasGrotTextRound-75Bold-Web-20d52793243203ada9917ef93e3622daf288b3bd9ffa443b0f25a233deb1db18.eot?#iefix") format("embedded-opentype"), url($font_path+"/assets/neue-haas-grotesk/NeueHaasGrotTextRound-75Bold-Web-ecc4fb361ce623ac5b3f2ed2c9037ddbc32209d8efbeabb8ceeb3ea42c986f3c.woff2") format("woff2"), url($font_path+"/assets/neue-haas-grotesk/NeueHaasGrotTextRound-75Bold-Web-f7dfad76779331e9c944577abefd024d6c09af22edafb4793c85d4504f71a327.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}

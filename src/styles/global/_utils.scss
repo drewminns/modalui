@@ -1,0 +1,49 @@
+@mixin xs {
+  @media (max-width: #{ $xs - 1 }) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{ $sm }) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{ $md }) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{ $lg }) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{ $xl }) {
+    @content;
+  }
+}
+
+@function calculateRem($size) {
+  $remSize: $size / $baseFontSize;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
